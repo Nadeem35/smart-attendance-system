@@ -1,0 +1,2 @@
+1. To apply tailwind property at every child at a time.
+ -- [&>*]:flex

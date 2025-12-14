@@ -1,0 +1,18 @@
+import React from "react";
+
+const LogoTitle = () => {
+  return (
+    <>
+      <img
+        src="data:image/png;base64,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"
+        alt=""
+        className="mx-auto text-center w-[100px]"
+      />
+      <h1 className="w-fit mx-auto text-center font-sans font-bold text-4xl text-blue-600 mt-10">
+        Welcome to AMS
+      </h1>
+    </>
+  );
+};
+
+export default LogoTitle;
