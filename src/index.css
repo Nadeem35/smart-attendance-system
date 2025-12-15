@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  font-family: sans-serif;
+  --primary-color: #2563eb;
+  --secondary-color: #22c55e;
+  --text-color: #111827;
+
+  --heading-1: #4a5be6;
+  /* --text-1: text-gray-500; */
+  --text-gray: #78709e;
+
+  --bg-light: #f1f4f9;
+  --bg-red: #f74747;
+  --bg-dark: #4a5be6;
+}
