@@ -13,15 +13,15 @@ const AdminLogin = () => {
           <div className="w-full sm:w-1/2 min-h-screen sm:min-h-fit px-6 sm:px-10 py-12 bg-white/80 fle flex-col items-center sm:items-start">
             <div className="px-15">
               <LogoTitle />
-              <p className="font-semibold mt-3 text-(--text-gray) tracking-widest">
-                Lorem ipsum dolor sit amet.
-              </p>
-              <h2 className="font-bold text-2xl mt-8 tracking-widest">
-                Log In as <span className="text-(--heading-1)">Admin</span>
-              </h2>
-              <form className="mt-5 w-full">
+              <p className="font-semibold mt-3 text-(--text-gray)  ">
+                Log back into your Account              </p>
+              {/* <h2 className="font-bold text-2xl mt-8  ">
+                Log In to your{" "}
+                <span className="text-(--heading-1)">Account</span>
+              </h2> */}
+              <form className="mt-10 w-full">
                 {/* Email */}
-                <label className="text-(--text-gray) font-semibold tracking-widest">
+                <label className="text-(--text-gray) font-semibold  ">
                   Email
                 </label>
                 <input
@@ -31,19 +31,22 @@ const AdminLogin = () => {
                 />
 
                 {/* Password */}
-                <label className="text-(--text-gray) font-semibold tracking-widest">
+                <label className="text-(--text-gray) font-semibold  ">
                   Password
                 </label>
                 <input
                   type="password"
                   placeholder="***********"
-                  className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mt-2 mb-5 outline-none"
+                  className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mt-2 outline-none"
                 />
+                <p className="mb-5 pt-[-5px] text-right text-(--heading-1) hover:text-(--heading-1)/90 font-medium text-sm  ">
+                  <Link to="/forgot">Forgot Password ?</Link>
+                </p>
 
                 {/* Button */}
                 <button
                   type="submit"
-                  className="bg-(--bg-dark) hover:bg-(--bg-dark)/90 w-full text-white rounded py-2 font-sembold cursor-pointer tracking-widest"
+                  className="bg-(--bg-dark) hover:bg-(--bg-dark)/90 w-full text-white rounded py-2 font-sembold cursor-pointer  "
                 >
                   Login
                 </button>
@@ -52,8 +55,8 @@ const AdminLogin = () => {
             {/* <DontAccount /> */}
             <p className="my-10 text-(--text-gray) text-center">
               Don't have an account ?{" "}
-              <span className="text-(--heading-1) font-semibold">
-                <Link to="/SignUp">Sign Up</Link>
+              <span className="text-(--heading-1) hover:text-(--heading-1)/90 font-semibold">
+                <Link to="/admin-sign-up">Sign Up</Link>
               </span>
             </p>
           </div>
