@@ -5,6 +5,7 @@ import Home from "./Component/Home/Home";
 import AdminLogin from "./Component/Admin/AdminLogin";
 import StudentLogin from "./Component/Student/StudentLogin";
 import TeacherLogin from "./Component/Teacher/TeacherLogin";
+import SignUp from "./Component/Account/SignUp";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/teacher-login" element={<TeacherLogin />} />
         <Route path="/student-login" element={<StudentLogin />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       {/* </BrowserRouter> */}
     </>

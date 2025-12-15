@@ -44,6 +44,12 @@ const Home = () => {
             </Link>
           </div>
           {/* <DontAccount /> */}
+          <p className="my-10 text-(--text-gray) text-center">
+            Don't have an account ?{" "}
+            <span className="text-(--heading-1) font-semibold">
+              <Link to="/SignUp">Sign Up</Link>
+            </span>
+          </p>
         </div>
       </div>
     </div>

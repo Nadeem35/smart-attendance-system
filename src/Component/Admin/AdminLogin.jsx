@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LogoTitle from "../LogoTitle";
 
 const AdminLogin = () => {
@@ -35,7 +36,7 @@ const AdminLogin = () => {
                 </label>
                 <input
                   type="password"
-                  placeholder="**********"
+                  placeholder="***********"
                   className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mt-2 mb-5 outline-none"
                 />
 
@@ -48,7 +49,13 @@ const AdminLogin = () => {
                 </button>
               </form>
             </div>
-            <div className="w-[50%] sm:w-fit mx-auto text-center"></div>
+            {/* <DontAccount /> */}
+            <p className="my-10 text-(--text-gray) text-center">
+              Don't have an account ?{" "}
+              <span className="text-(--heading-1) font-semibold">
+                <Link to="/SignUp">Sign Up</Link>
+              </span>
+            </p>
           </div>
         </div>
       </div>
