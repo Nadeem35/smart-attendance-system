@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import attendanceBg from "../../assets/attendanceBg.jpg"
 import LogoTitle from "../LogoTitle";
 
 const AdminLogin = () => {
@@ -6,19 +7,17 @@ const AdminLogin = () => {
     <>
       <div className="min-h-screen flex items-center justify-center">
         {/* Background wrapper */}
+        {/* sm:bg-[url('https://agevole.in/wp-content/uploads/2023/07/wd-scaled.jpg')] */}
         <div
-          className="bg-none sm:bg-[url('https://agevole.in/wp-content/uploads/2023/07/wd-scaled.jpg')]
-          bg-cover bg-center bg-no-repeat w-full min-h-screen flx items-center justify-center"
+          style={{ backgroundImage: `url(${attendanceBg})` }}
+          className="bg-none 
+           bg-cover bg-center bg-no-repeat w-full min-h-screen flex items-stretch justify-center"
         >
-          <div className="w-full sm:w-1/2 min-h-screen sm:min-h-fit px-6 sm:px-10 py-12 bg-white/80 fle flex-col items-center sm:items-start">
-            <div className="px-15">
+          <div className="w-full sm:w-1/2 min-h-screen px-6 sm:px-10 py-8 bg-white/80 flex flex-col items-center sm:items-start mx-auto">
+            <div className="px-10 mx-auto">
               <LogoTitle />
-              <p className="font-semibold mt-3 text-(--text-gray)  ">
-                Welcome back into your Account              </p>
-              {/* <h2 className="font-bold text-2xl mt-8  ">
-                Log In to your{" "}
-                <span className="text-(--heading-1)">Account</span>
-              </h2> */}
+              <p className="font-semibold mt-1 text-(--text-gray)  ">
+                Welcome back into your Account</p>
               <form className="mt-10 w-full">
                 {/* Email */}
                 <label className="text-(--text-gray) font-semibold  ">
@@ -27,9 +26,8 @@ const AdminLogin = () => {
                 <input
                   type="email"
                   placeholder="e.g: aarfeen@gmail.com"
-                  className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mt-2 mb-5 outline-none"
+                  className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mb-5 outline-none"
                 />
-
                 {/* Password */}
                 <label className="text-(--text-gray) font-semibold  ">
                   Password
@@ -37,7 +35,7 @@ const AdminLogin = () => {
                 <input
                   type="password"
                   placeholder="***********"
-                  className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mt-2 outline-none"
+                  className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm outline-none"
                 />
                 <p className="mb-5 pt-[-5px] text-right text-(--heading-1) hover:text-(--heading-1)/90 font-medium text-sm  ">
                   <Link to="/forgot-password">Forgot Password ?</Link>
@@ -53,7 +51,7 @@ const AdminLogin = () => {
               </form>
             </div>
             {/* <DontAccount /> */}
-            <p className="my-10 text-(--text-gray) text-center">
+            <p className="my-8 text-(--text-gray) mx-auto">
               Don't have an account ?{" "}
               <span className="text-(--heading-1) hover:text-(--heading-1)/90 font-semibold">
                 <Link to="/sign-up">Sign Up</Link>

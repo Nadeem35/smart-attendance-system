@@ -7,11 +7,11 @@ const Home = () => {
     <div className="font-sans min-h-screen flex items-center justify-center">
       {/* Background wrapper */}
       <div
-        className="bg-none sm:bg-[url('https://agevole.in/wp-content/uploads/2023/07/wd-scaled.jpg')]
+        className="bg-[url('https://agevole.in/wp-content/uploads/2023/07/wd-scaled.jpg')]
           bg-cover bg-center bg-no-repeat w-full min-h-screen flx items-center justify-center"
       >
         {/* Content box */}
-        <div className="w-full sm:w-1/2 min-h-screen sm:min-h-fit px-6 sm:px-10 py-12 bg-white/80 fle flex-col items-center sm:items-start">
+        <div className="w-full sm:w-1/2 min-h-screen sm:min-h-fit px-6 sm:px-10 py-12 bg-white/50 flex-col items-center sm:items-start">
           <div className="w-fit mx-auto text-center">
             <LogoTitle />
           </div>

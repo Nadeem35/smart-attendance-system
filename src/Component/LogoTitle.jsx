@@ -7,9 +7,9 @@ const LogoTitle = () => {
       <img
         src={amsLogo}
         alt="logo"
-        className="mx-auto my-10 w-[100px]"
+        className="mx-auto my-3 w-20"
       />
-      <h1 className="font-bold text-4xl text-(--heading-1)">Welcome to AMS</h1>
+      <h1 className="font-bold text-3xl text-(--heading-1)">Welcome to AMS</h1>
     </>
   );
 };

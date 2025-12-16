@@ -14,15 +14,15 @@ const AdminSignUp = () => {
           <div className="w-full sm:w-1/2 min-h-screen sm:min-h-fit px-6 sm:px-10 py-12 bg-white/80 fle flex-col items-center sm:items-start">
             <div className="px-15">
               <LogoTitle />
-              <p className="font-semibold mt-3 text-(--text-gray)  ">
+              <p className="font-semibold mt-3 text-(--text-gray) ">
                 Lorem ipsum dolor sit amet.
               </p>
-              <h2 className="font-bold text-2xl mt-8  ">
+              <h2 className="font-bold text-2xl mt-8 ">
                 Sign Up as <span className="text-(--heading-1)">Admin</span>
               </h2>
               <form className="mt-5 w-full">
                 {/* Email */}
-                <label className="text-(--text-gray) font-semibold  ">
+                <label className="text-(--text-gray) font-semibold ">
                   Employee ID
                 </label>
 
@@ -35,7 +35,7 @@ const AdminSignUp = () => {
                   className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mt-2 mb-5 outline-none"
                 />
 
-                <label className="text-(--text-gray) font-semibold  ">
+                <label className="text-(--text-gray) font-semibold ">
                   Name
                 </label>
 
@@ -45,7 +45,7 @@ const AdminSignUp = () => {
                   className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mt-2 mb-5 outline-none"
                 />
 
-                <label className="text-(--text-gray) font-semibold  ">
+                <label className="text-(--text-gray) font-semibold ">
                   Email
                 </label>
 
@@ -56,7 +56,7 @@ const AdminSignUp = () => {
                 />
 
                 {/* Password */}
-                <label className="text-(--text-gray) font-semibold  ">
+                <label className="text-(--text-gray) font-semibold ">
                   Create Password
                 </label>
                 <input
@@ -66,7 +66,7 @@ const AdminSignUp = () => {
                 />
 
                 {/* Password */}
-                <label className="text-(--text-gray) font-semibold  ">
+                <label className="text-(--text-gray) font-semibold ">
                   Confirm Password
                 </label>
                 <input
@@ -78,7 +78,7 @@ const AdminSignUp = () => {
                 {/* Button */}
                 <button
                   type="submit"
-                  className="bg-(--bg-dark) hover:bg-(--bg-dark)/90 w-full text-white rounded py-2 mt-2 font-sembold cursor-pointer  "
+                  className="bg-(--bg-dark) hover:bg-(--bg-dark)/90 w-full text-white rounded py-2 mt-2 font-sembold cursor-pointer "
                 >
                   Sign Up
                 </button>
