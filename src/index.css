@@ -14,4 +14,7 @@ body {
   /* ----- Background colors ----- */
   --bg-light: #f1f4f9;
   --bg-dark: #4a5be6;
+
+  /* ----- Darhboard color ----- */
+  --bg-blue: #4a5be6;
 }
