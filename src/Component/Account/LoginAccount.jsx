@@ -16,7 +16,7 @@ const AdminLogin = () => {
           <div className="w-full sm:w-1/2 min-h-screen px-6 sm:px-10 py-8 bg-white/80 flex flex-col items-center sm:items-start mx-auto">
             <div className="px-10 mx-auto">
               <LogoTitle />
-              <p className="font-semibold mt-1 text-(--text-gray)  ">
+              <p className="font-normal sm:font-semibold text-base sm:text-sm mt-1 text-(--text-gray)">
                 Welcome back into your Account</p>
               <form className="mt-10 w-full">
                 {/* Email */}
