@@ -13,8 +13,8 @@ const AdminLogin = () => {
           <div className="w-full sm:w-1/2 min-h-screen sm:min-h-fit px-6 sm:px-10 py-12 bg-white/80 fle flex-col items-center sm:items-start">
             <div className="px-15">
               <LogoTitle />
-              <p className="font-normal sm:font-semibold mt-3 text-(--text-gray)  ">
-                Welcome back into your Account              </p>
+              <p className="font-normal sm:font-semibold mt-3 text-(--text-gray)">
+                Welcome back into your Account</p>
               {/* <h2 className="font-bold text-2xl mt-8  ">
                 Log In to your{" "}
                 <span className="text-(--heading-1)">Account</span>
