@@ -15,14 +15,14 @@ const SignUp = () => {
           className="bg-none 
            bg-cover bg-center bg-no-repeat w-full min-h-screen flex items-stretch justify-center"
         >
-          <div className="w-full sm:w-1/2 min-h-screen px-6 sm:px-10 py-8 bg-white/80 flex flex-col items-center sm:items-start mx-auto">
+          <div className="w-full sm:w-1/2 min-h-screen px-5 sm:px-10 py-8 bg-white/80 flex flex-col items-center sm:items-start mx-auto">
 
             <div className="px-10 mx-auto">
               <LogoTitle />
               <p className="font-semibold mt-1 text-(--text-gray) ">
                 Lorem ipsum dolor sit amet.
               </p>
-              <h2 className="font-bold text-2xl mt-8 ">
+              <h2 className="font-bold text-[18px] sm:text-xl mt-8">
                 Sign Up your <span className="text-(--heading-1)">Account</span>
               </h2>
               <form className="mt-5 w-full">
