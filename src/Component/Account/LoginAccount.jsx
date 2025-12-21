@@ -57,6 +57,10 @@ const AdminLogin = () => {
                 <Link to="/sign-up">Sign Up</Link>
               </span>
             </p>
+            <p className="mx-auto">
+              <Link to="/employee-profile">Employee</Link>
+            </p>
+
           </div>
         </div>
       </div>

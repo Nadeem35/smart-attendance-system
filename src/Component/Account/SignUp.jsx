@@ -10,10 +10,8 @@ const SignUp = () => {
       <div className="min-h-screen flex items-center justify-center">
         {/* Background wrapper */}
         <div
-          // sm:bg-[url('https://agevole.in/wp-content/uploads/2023/07/wd-scaled.jpg')]
           style={{ backgroundImage: `url(${attendanceBg})` }}
-          className="bg-none 
-           bg-cover bg-center bg-no-repeat w-full min-h-screen flex items-stretch justify-center"
+          className="bg-none bg-cover bg-center bg-no-repeat w-full min-h-screen flex items-stretch justify-center"
         >
           <div className="w-full sm:w-1/2 min-h-screen px-5 sm:px-10 py-8 bg-white/80 flex flex-col items-center sm:items-start mx-auto">
 
@@ -60,7 +58,6 @@ const SignUp = () => {
                 <label className="text-(--text-gray) font-semibold ">
                   Email
                 </label>
-
                 <input
                   type="email"
                   placeholder="e.g: aarfeen@gmail.com"
