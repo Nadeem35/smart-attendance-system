@@ -54,6 +54,23 @@ const SignUp = () => {
                   className="bg-(--bg-light) block w-full rounded px-3 py-2 text-sm mb-5 outline-none"
                 />
 
+                {/* Status */}
+                <label className="text-(--text-gray) font-semibold">
+                  Role
+                </label>
+
+                <select
+                  className="bg-(--bg-light) text-(--text-gray)  block w-full px-3 py-2 text-sm mb-5 outline-none"
+                  defaultValue=""
+                >
+                  <option value="" disabled selected>
+                    e.g: student
+                  </option>
+                  <option value="admin">Admin</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="student">Student</option>
+                </select>
+
                 <label className="text-(--text-gray) font-semibold ">
                   Email
                 </label>
