@@ -9,7 +9,7 @@ const LogoTitle = () => {
         alt="logo"
         className="mx-auto my-3 w-20"
       />
-      <h1 className="font-bold text-2xl sm:text-2xl md:text-3xl text-(--heading-1)">Welcome to AMS</h1>
+      <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl text-(--heading-1)">Welcome to AMS</h1>
     </>
   );
 };

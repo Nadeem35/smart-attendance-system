@@ -1,4 +1,3 @@
-import React from "react";
 import attendanceBg from "../../assets/attendanceBg.jpg"
 import LogoTitle from "../LogoTitle";
 import { Link } from "react-router-dom";
@@ -16,8 +15,9 @@ const SignUp = () => {
 
             <div className="px-10 mx-auto">
               <LogoTitle />
-              <p className="font-semibold mt-1 text-(--text-gray) ">
-                Lorem ipsum dolor sit amet.
+              <p className=" mt-1 text-(--text-gray) ">
+                {/* Lorem ipsum dolor sit amet. */}
+                AMS Registraction form
               </p>
               <h2 className="font-bold text-[18px] sm:text-xl mt-8">
                 Sign Up your <span className="text-(--heading-1)">Account</span>
