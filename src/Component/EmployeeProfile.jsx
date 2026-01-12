@@ -11,7 +11,7 @@ const EmployeeProfile = () => {
   ];
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos?_limit=3")
+    fetch("https://jsonplaceholder.typicode.com/photos?_limit=8")
       .then((res) => res.json())
       .then((data) => setProfile(data))
       .catch((err) => console.error(err));
