@@ -38,13 +38,13 @@ const EmployeeProfile = () => {
           return (
             <div
               key={photo.id}   // ✅ ID FROM API
-              className="w-70 bg-blue-600/80 p-4 text-white rounded-xl  shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+              className="w-70 bg-blue-600/80 p-4 text-white rounded-xl border-4 border-white/60 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
             >
               {/* ✅ API IMAGE */}
               <img
                 src={user.thumbnailUrl}
                 alt={user.title}
-                className="w-24 h-24 rounded-full mx-auto mb-4 bg-white border-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 object-cover"
+                className="w-24 h-24 rounded-full mx-auto mb-4 bg-transparent border-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 object-cover"
               />
               {/* ✅ MIXED DATA CORRECTLY */}
               <p><strong>API ID:</strong> {user.id}</p>
