@@ -44,7 +44,7 @@ const EmployeeProfile = () => {
               <img
                 src={user.thumbnailUrl}
                 alt={user.title}
-                className="w-24 h-24 rounded-full mx-auto mb-4 bg-transparent border-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 object-cover"
+                className="w-24 h-24 rounded-full mx-auto mb-4 bg-white/50 border-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 object-cover"
               />
               {/* ✅ MIXED DATA CORRECTLY */}
               <p><strong>API ID:</strong> {user.id}</p>
