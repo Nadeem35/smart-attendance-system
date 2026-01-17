@@ -12,9 +12,14 @@ const EmployeeProfile = () => {
   ];
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos?_limit=8")
+    // fetch("https://jsonplaceholder.typicode.com/photos?_limit=8")
+    //   .then((res) => res.json())
+    //   .then((data) => setProfile(data))
+    //   .catch((err) => console.error(err));
+    //--------------------
+    fetch("https://dummyjson.com/carts")
       .then((res) => res.json())
-      .then((data) => setProfile(data))
+      .then((data) => setProfile(data.carts))
       .catch((err) => console.error(err));
   }, []);
 
@@ -42,16 +47,17 @@ const EmployeeProfile = () => {
             >
               {/* ✅ API IMAGE */}
               <img
-                src={user.thumbnailUrl}
-                alt={user.title}
+                src={user.products[0]?.thumbnail}
+                alt={user.id}
                 className="w-24 h-24 rounded-full mx-auto mb-4 bg-white/50 border-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 object-cover"
               />
               {/* ✅ MIXED DATA CORRECTLY */}
               <p><strong>API ID:</strong> {user.id}</p>
-              <p><strong>Name:</strong> {user.title}</p>
-              <p><strong>Age:</strong> {user.albumId}</p>
-              <p><strong>Phone:</strong> {user.Phone}</p>
-              <p><strong>Address:</strong> {user.Address}</p>
+              <p><strong>Title:</strong> {user.products[0]?.title}</p>
+              <p><strong>Price:</strong> {user.products[0]?.price}</p>
+              <p><strong>Quantity:</strong> {user.products[0]?.quantity}</p>
+              <p><strong>Total Price:</strong> {user.products[0]?.total}</p>
+              <p><strong>Discount Percentage:</strong> {user.products[0]?.discountPercentage}</p>
             </div>
           );
         })}
@@ -61,3 +67,5 @@ const EmployeeProfile = () => {
 };
 
 export default EmployeeProfile;
+
+
