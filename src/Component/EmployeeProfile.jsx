@@ -49,7 +49,10 @@ const EmployeeProfile = () => {
               <img
                 src={user.products[0]?.thumbnail}
                 alt={user.id}
-                className="w-fit h-fit rounded-fll mx-auto mb-4 bg-white/80 borde-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 object-cover"
+                className="w-full h-fit rounded-fll mx-auto mb-4 bg-white/80 
+                borde-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
+                object-cover rounded-tl-xl rounded-tr-xl
+                "
               />
               <div className="p-4">
                 {/* ✅ MIXED DATA CORRECTLY */}
