@@ -43,7 +43,7 @@ const EmployeeProfile = () => {
           return (
             <div
               key={photo.id}   // ✅ ID FROM API
-              className="w-70 bg-blue-600/60 text-white rounded-xl border-4 border-blue-600/30 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+              className="w-70 bg-black/50 text-white rounded-xl border-4 border-black/10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
             >
               {/* ✅ API IMAGE */}
               <img
@@ -58,7 +58,7 @@ const EmployeeProfile = () => {
                 {/* ✅ MIXED DATA CORRECTLY */}
                 <p><strong>API ID:</strong> {user.id}</p>
                 <p><strong>Title:</strong> {user.products[0]?.title}</p>
-                <p><strong>Price:</strong> {user.products[0]?.price}</p>
+                <p><strong>Price:</strong> <span className="text-green-500">{user.products[0]?.price}</span></p>
                 <p><strong>Quantity:</strong> {user.products[0]?.quantity}</p>
                 <p><strong>Total Price:</strong> {user.products[0]?.total}</p>
                 <p><strong>Discount Percentage:</strong> {user.products[0]?.discountPercentage}</p>
