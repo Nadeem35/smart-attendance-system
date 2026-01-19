@@ -49,7 +49,7 @@ const EmployeeProfile = () => {
               <img
                 src={user.products[0]?.thumbnail}
                 alt={user.id}
-                className="w-full h-fit rounded-fll mx-auto mb-4 bg-white/80 
+                className="w-full h-50 rounded-fll mx-auto mb-4 bg-white/80 
                 borde-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
                 object-cover rounded-tl-xl rounded-tr-xl
                 "
@@ -60,8 +60,8 @@ const EmployeeProfile = () => {
                 <p><strong>Title:</strong> {user.products[0]?.title}</p>
                 <p><strong>Price:</strong> <span className="text-green-500">{user.products[0]?.price}</span></p>
                 <p><strong>Quantity:</strong> {user.products[0]?.quantity}</p>
-                <p><strong>Total Price:</strong> {user.products[0]?.total}</p>
-                <p><strong>Discount Percentage:</strong> {user.products[0]?.discountPercentage}</p>
+                <p><strong>Total Price:</strong> <span className="text-green-500">{user.products[0]?.total}</span></p>
+                <p><strong>Discount Percentage:</strong> {user.products[0]?.discountPercentage}%</p>
               </div>
             </div>
           );
