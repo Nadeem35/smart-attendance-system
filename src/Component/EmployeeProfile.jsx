@@ -58,9 +58,9 @@ const EmployeeProfile = () => {
                 {/* ✅ MIXED DATA CORRECTLY */}
                 <p><strong>API ID:</strong> {user.id}</p>
                 <p><strong>Title:</strong> {user.products[0]?.title}</p>
-                <p><strong>Price:</strong> <span className="text-green-500">{user.products[0]?.price}</span></p>
+                <p><strong>Price:</strong> <span className="text-green-500">${user.products[0]?.price}</span></p>
                 <p><strong>Quantity:</strong> {user.products[0]?.quantity}</p>
-                <p><strong>Total Price:</strong> <span className="text-green-500">{user.products[0]?.total}</span></p>
+                <p><strong>Total Price:</strong> <span className="text-green-500">${user.products[0]?.total?.toFixed(3)}</span></p>
                 <p><strong>Discount Percentage:</strong> {user.products[0]?.discountPercentage}%</p>
               </div>
             </div>
