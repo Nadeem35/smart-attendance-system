@@ -44,7 +44,7 @@ const EmployeeProfile = () => {
             return (
               <div
                 key={photo.id}   // ✅ ID FROM API
-                className="w-70 bg-black/50 text-white rounded-xl border-4 border-black/10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                className="w-70 bg-black/80 text-white rounded-xl border-4 border-black/10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
               >
                 {/* ✅ API IMAGE */}
                 <img
