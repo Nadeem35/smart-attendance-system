@@ -50,7 +50,7 @@ const EmployeeProfile = () => {
                 <img
                   src={user.products[0]?.thumbnail}
                   alt={user.id}
-                  className="w-full h-fit rounded-fll mx-auto mb-4 bg-white/90 
+                  className="w-full h-fit rounded-fll mx-auto mb-4 bg-gray-100/90 
                 borde-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
                 object-cover rounded-tl-xl rounded-tr-xl
                 "
