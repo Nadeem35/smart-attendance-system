@@ -55,7 +55,7 @@ const EmployeeProfile = () => {
                 object-cover rounded-tl-xl rounded-tr-xl
                 "
                 />
-                <div className="p-4">
+                <div className="px-3 py-4">
                   {/* ✅ MIXED DATA CORRECTLY */}
                   <p><strong>API ID:</strong> {user.id}</p>
                   <p><strong>Title:</strong> {user.products[0]?.title}</p>
