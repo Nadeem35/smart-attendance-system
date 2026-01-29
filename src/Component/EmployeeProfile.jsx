@@ -46,14 +46,14 @@ const EmployeeProfile = () => {
             return (
               <div
                 key={photo.id}   // ✅ ID FROM API
-                className="w-70 bg-black/80 text-gray-200 rounded-xl border-4 border-black/10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                className="w-70 bg-black/80 text-gray-200 rounded-md border-4 border-black/10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
               >
                 {/* ✅ API IMAGE */}
                 <img
                   src={user.products[0]?.thumbnail}
                   alt={user.id}
                   className="w-full h-60 rounded-fll mx-auto mb-4 bg-gray-100 
-                borde-5 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
+                borde-2 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
                 object-cover rounded-tl-xl rounded-tr-xl
                 "
                 />
