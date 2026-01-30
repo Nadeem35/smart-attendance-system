@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import attendanceBg from "../assets/attendanceBg.jpg";
 
-const EmployeeProfile = () => {
+const EmployeeProfile1 = () => {
   const [profile, setProfile] = useState(null);
 
   const users = [
@@ -54,7 +54,7 @@ const EmployeeProfile = () => {
                   alt={user.id}
                   className="w-full h-60 rounded-fll mx-auto mb-4 bg-gray-100 
                 borde-2 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
-                object-cover rounded-tl-xl rounded-tr-xl
+                object-cover rounded-tl-sm rounded-tr-sm
                 "
                 />
                 <div className="px-3 py-4">
@@ -75,4 +75,4 @@ const EmployeeProfile = () => {
   );
 };
 
-export default EmployeeProfile;
+export default EmployeeProfile1;
