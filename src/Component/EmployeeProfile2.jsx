@@ -12,17 +12,17 @@ const EmployeeProfile2 = () => {
   ];
 
   useEffect(() => {
-    // fetch("https://jsonplaceholder.typicode.com/photos?_limit=8")
-    //   .then((res) => res.json())
-    //   .then((data) => setProfile(data))
-    //   .catch((err) => console.error(err));
+    fetch("https://jsonplaceholder.typicode.com/photos?_limit=8")
+      .then((res) => res.json())
+      .then((data) => setProfile(data))
+      .catch((err) => console.error(err));
 
     //--------------------
 
-    fetch("https://dummyjson.com/carts?_limit=5")
-      .then((res) => res.json())
-      .then((data) => setProfile(data.carts))
-      .catch((err) => console.error(err));
+    //   fetch("https://dummyjson.com/carts?_limit=5")
+    //     .then((res) => res.json())
+    //     .then((data) => setProfile(data.carts))
+    //     .catch((err) => console.error(err));
   }, []);
 
   if (!profile) {
@@ -50,7 +50,7 @@ const EmployeeProfile2 = () => {
               >
                 {/* ✅ API IMAGE */}
                 <img
-                  src={user.products[0]?.thumbnail}
+                  src={user.products[0]?.thumbnailUrl}
                   alt={user.id}
                   className="w-full h-60 rounded-fll mx-auto mb-4 bg-red-400 
                 borde-2 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
