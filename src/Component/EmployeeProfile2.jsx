@@ -12,7 +12,7 @@ const EmployeeProfile2 = () => {
   ];
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos?_limit=8")
+    fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((data) => setProfile(data))
       .catch((err) => console.error(err));
@@ -50,21 +50,27 @@ const EmployeeProfile2 = () => {
               >
                 {/* ✅ API IMAGE */}
                 <img
-                  src={user.products[0]?.thumbnailUrl}
+                  src={user.image}
                   alt={user.id}
-                  className="w-full h-60 rounded-fll mx-auto mb-4 bg-red-400 
+                  className="w-full rounded-fll mx-auto mb-4 bg-red-400 
                 borde-2 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
                 object-cover rounded-tl-sm rounded-tr-sm
                 "
                 />
                 <div className="px-3 py-4">
                   {/* ✅ MIXED DATA CORRECTLY */}
+
                   <p><strong>API ID:</strong> {user.id}</p>
-                  <p><strong>Title:</strong> {user.products[0]?.title}</p>
-                  <p><strong>Price:</strong> <span className="text-green-500">${user.products[0]?.price}</span></p>
-                  <p><strong>Quantity:</strong> {user.products[0]?.quantity}</p>
-                  <p><strong>Total Price:</strong> <span className="text-green-500">${user.products[0]?.total?.toFixed(3)}</span></p>
-                  <p><strong>Discount Percentage:</strong> {user.products[0]?.discountPercentage}%</p>
+                  <p><strong>Title:</strong> {user.title}</p>
+                  <p>
+                    <strong>Price:</strong>{" "}
+                    <span className="text-green-500">${user.price}</span>
+                  </p>
+                  <p>
+                    <strong>Description:</strong> {user.description}
+                  </p>
+                  {/* <p><strong>Total Price:</strong> <span className="text-green-500">${user.products[0]?.total?.toFixed(3)}</span></p> */}
+                  {/* <p><strong>Discount Percentage:</strong> {user.products[0]?.discountPercentage}%</p> */}
                 </div>
               </div>
             );
