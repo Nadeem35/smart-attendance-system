@@ -52,7 +52,7 @@ const EmployeeProfile2 = () => {
                 <img
                   src={user.image}
                   alt={user.id}
-                  className="w-full rounded-fll mx-auto mb-4 bg-red-400 
+                  className="w-full  bg-cover rounded-fll mx-auto mb-4 bg-white 
                 borde-2 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
                 object-cover rounded-tl-sm rounded-tr-sm
                 "
@@ -67,10 +67,8 @@ const EmployeeProfile2 = () => {
                     <span className="text-green-500">${user.price}</span>
                   </p>
                   <p>
-                    <strong>Description:</strong> {user.description}
+                    <strong>Description:</strong> {user.description.slice(0, 100) + "..."}
                   </p>
-                  {/* <p><strong>Total Price:</strong> <span className="text-green-500">${user.products[0]?.total?.toFixed(3)}</span></p> */}
-                  {/* <p><strong>Discount Percentage:</strong> {user.products[0]?.discountPercentage}%</p> */}
                 </div>
               </div>
             );
