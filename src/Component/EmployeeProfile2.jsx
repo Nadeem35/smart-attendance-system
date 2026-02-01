@@ -2,30 +2,17 @@ import { useEffect, useState } from "react";
 import attendanceBg from "../assets/attendanceBg.jpg";
 
 const EmployeeProfile2 = () => {
-  const [profile, setProfile] = useState(null);
-
-  const users = [
-    { ID: 1, FName: "John", age: 32, Phone: 9087654321, Address: "123 Jamia Nagar, New Delhi" },
-    { ID: 2, FName: "Sam", age: 54, Phone: 9087654321, Address: "321 Batla House, Okhla, New Delhi" },
-    { ID: 3, FName: "Michael", age: 23, Phone: 9087654321, Address: "958 Secunderabad, Hyderabad" },
-    { ID: 3, FName: "John", age: 43, Phone: 9087237421, Address: "Jamia Nagar, New Delhi" }
-  ];
+  const [profile, setProfile] = useState([]); // users array only
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://dummyjson.com/users")
       .then((res) => res.json())
-      .then((data) => setProfile(data))
+      .then((data) => setProfile(data.users)) // ✅ IMPORTANT
       .catch((err) => console.error(err));
-
-    //--------------------
-
-    //   fetch("https://dummyjson.com/carts?_limit=5")
-    //     .then((res) => res.json())
-    //     .then((data) => setProfile(data.carts))
-    //     .catch((err) => console.error(err));
   }, []);
 
-  if (!profile) {
+  // ✅ Correct loading check
+  if (!profile.length) {
     return (
       <div className="min-h-screen flex items-center justify-center text-white">
         Loading profiles...
@@ -40,39 +27,25 @@ const EmployeeProfile2 = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-center gap-6 p-6">
-          {profile.map((user, index) => {
-            const photo = profile[index]; // ✅ API DATA
+          {profile.map((user) => (
+            <div
+              key={user.id}
+              className="w-72 bg-black/80 text-gray-200 rounded-md shadow-lg"
+            >
+              <img
+                src={user.image}
+                alt={user.firstName}
+                className="w-full h-56 object-cover rounded-t-md bg-white"
+              />
 
-            return (
-              <div
-                key={photo.id}   // ✅ ID FROM API
-                className="w-70 bg-black/80 text-gray-200 rounded-md border-4 border-black/10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
-              >
-                {/* ✅ API IMAGE */}
-                <img
-                  src={user.image}
-                  alt={user.id}
-                  className="w-full  bg-cover rounded-fll mx-auto mb-4 bg-white 
-                borde-2 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
-                object-cover rounded-tl-sm rounded-tr-sm
-                "
-                />
-                <div className="px-3 py-4">
-                  {/* ✅ MIXED DATA CORRECTLY */}
-
-                  <p><strong>API ID:</strong> {user.id}</p>
-                  <p><strong>Title:</strong> {user.title}</p>
-                  <p>
-                    <strong>Price:</strong>{" "}
-                    <span className="text-green-500">${user.price}</span>
-                  </p>
-                  <p>
-                    <strong>Description:</strong> {user.description.slice(0, 100) + "..."}
-                  </p>
-                </div>
+              <div className="px-3 py-4">
+                <p><strong>ID:</strong> {user.id}</p>
+                <p><strong>Name:</strong> {user.firstName} {user.lastName}</p>
+                <p><strong>Age:</strong> {user.age}</p>
+                <p><strong>Birth Date:</strong> {user.birthDate}</p>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </div>
