@@ -66,6 +66,7 @@ const EmployeeProfile2 = () => {
                   <p><strong>Gender:</strong> {user.gender} </p>
                   <p><strong>Age:</strong> {user.age} </p>
                   <p><strong>Blood Group:</strong> {user.bloodGroup} </p>
+                  <p><strong>Weight:</strong> {user.weight} </p>
 
                   <p>
                     <strong>DOB:</strong>{" "}
