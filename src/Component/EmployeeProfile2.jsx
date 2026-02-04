@@ -58,15 +58,17 @@ const EmployeeProfile2 = () => {
                 object-cover rounded-sm 
                 "
                 />
-                <div className="px-3 py-4">
+                <div className="px-3 pb-4">
                   {/* ✅ MIXED DATA CORRECTLY */}
 
                   <p><strong>API ID:</strong> {user.id}</p>
                   <p><strong>Title:</strong> {user.firstName} {user.lastName}</p>
                   <p><strong>Gender:</strong> {user.gender} </p>
+                  <p><strong>Age:</strong> {user.age} </p>
+                  <p><strong>Blood Group:</strong> {user.bloodGroup} </p>
 
                   <p>
-                    <strong>Price:</strong>{" "}
+                    <strong>DOB:</strong>{" "}
                     <span className="text-green-500">{user.birthDate}</span>{" "}
                   </p>
                   <p><strong>Email: </strong></p>
