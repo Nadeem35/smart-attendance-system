@@ -53,11 +53,12 @@ const EmployeeProfile2 = () => {
                 <img
                   src={user.image}
                   alt={user.id}
-                  className="w-100% h-auto bg-cover rounded-fll mx-auto mb-4 bg-white 
+                  className="w-100% h-auto bg-cover rounded-fll mx-auto my-3 bg-white 
                 borde-2 border-t-amber-500 border-b-amber-500 border-r-green-500 border-l-green-500 
                 object-cover rounded-sm 
                 "
                 />
+                <hr className="py-1 text-gray-400" />
                 <div className="px-3 pb-4">
                   {/* ✅ MIXED DATA CORRECTLY */}
 
@@ -70,12 +71,14 @@ const EmployeeProfile2 = () => {
 
                   <p>
                     <strong>DOB:</strong>{" "}
-                    <span className="text-green-500">{user.birthDate}</span>{" "}
+                    <span className="text-green-500/70">{user.birthDate}</span>{" "}
                   </p>
                   <p><strong>Email: </strong></p>
-                  <span className="text-gray-400">Email:{user.email}</span>
+                  <span className="text-gray-400">{user.email}</span>
                   <p>
+                    <strong>University Name: </strong>
                     {/* <strong>Description:</strong> {user.description.slice(0, 100) + "..."} */}
+                    {user.university}
                   </p>
                 </div>
               </div>
