@@ -76,10 +76,18 @@ const EmployeeProfile2 = () => {
                   <p><strong>Email: </strong></p>
                   <span className="text-gray-400">{user.email}</span>
                   <p>
-                    <strong>University Name: </strong>
-                    {/* <strong>Description:</strong> {user.description.slice(0, 100) + "..."} */}
-                    {user.university}
+                    <strong>University: </strong>
+                    <span className="text-gray-300">
+                      {user.university}
+                    </span>
                   </p>
+
+                  <div className="bg-gray-600/30 px-3">
+                    <p className="text-center font-bold">Hairs Style</p>
+                    <p>Color: {user.hair.color}</p>
+                    <p>Type: {user.hair.type}</p>
+                  </div>
+
                 </div>
               </div>
             );
