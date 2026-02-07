@@ -67,13 +67,15 @@ const EmployeeProfile2 = () => {
 
                   <div className="my-2 flex justify-between ">
 
-                    <div className="w-1/2 text-center border-r border-b border-gray-400">
+                    <div className="w-1/2 text-center border-r border-gray-400">
                       <p><strong>Gender</strong> </p>
+                      <hr className="border-b border-gray-400" />
                       <p> {user.gender}</p>
                     </div>
 
-                    <div className="w-1/2 block text-center">
+                    <div className="w-1/2 border-gray-400 block text-center">
                       <p><strong>Age</strong>  </p>
+                      <hr className="border-b border-gray-400" />
                       <p>{user.age}</p>
                     </div>
 
