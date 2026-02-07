@@ -64,8 +64,22 @@ const EmployeeProfile2 = () => {
 
                   <p><strong>API ID:</strong> {user.id}</p>
                   <p><strong>Title:</strong> {user.firstName} {user.lastName}</p>
-                  <p><strong>Gender:</strong> {user.gender} </p>
-                  <p><strong>Age:</strong> {user.age} </p>
+
+                  <div className="my-2 flex justify-between ">
+
+                    <div className="w-1/2 text-center border-r border-b border-gray-400">
+                      <p><strong>Gender</strong> </p>
+                      <p> {user.gender}</p>
+                    </div>
+
+                    <div className="w-1/2 block text-center">
+                      <p><strong>Age</strong>  </p>
+                      <p>{user.age}</p>
+                    </div>
+
+                  </div>
+
+
                   <p><strong>Blood Group:</strong> {user.bloodGroup} </p>
                   <p><strong>Weight:</strong> {user.weight} </p>
 
