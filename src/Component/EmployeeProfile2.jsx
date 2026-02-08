@@ -98,10 +98,15 @@ const EmployeeProfile2 = () => {
                     </span>
                   </p>
 
-                  <div className="bg-gray-600/30 px-3">
+                  <div className="bg-gray-300/30 px-3 py-2 rounded">
                     <p className="text-center font-bold">Hairs Style</p>
                     <p>Color: {user.hair.color}</p>
                     <p>Type: {user.hair.type}</p>
+                  </div>
+                  <div className="">
+                    <p className="text-center"><strong>Strong</strong></p>
+                    <p>State: {user.address.state}</p>
+                    <p>City: {user.address.address}</p>
                   </div>
 
                 </div>
