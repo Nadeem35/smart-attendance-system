@@ -105,8 +105,9 @@ const EmployeeProfile2 = () => {
                   </div>
                   <div className="">
                     <p className="text-center"><strong>Strong</strong></p>
-                    <p>State: {user.address.state}</p>
-                    <p>City: {user.address.address}</p>
+                    <p>State: <span className="text-gray-400">{user.address.state}</span> </p>
+                    <p>City:  <span className="text-gray-400"> {user.address.address}</span></p>
+                    <p>Postal Code:  <span className="text-gray-400">{user.address.postalCode}</span> </p>
                   </div>
 
                 </div>
