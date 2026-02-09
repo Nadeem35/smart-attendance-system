@@ -81,7 +81,8 @@ const EmployeeProfile2 = () => {
 
                   </div>
 
-                  <table border={1}>
+                  {/* <table border={1}> */}
+                  <table style={{ border: "1px solid black", borderCollapse: "collapse" }}>
                     <tr>
                       <th>Title</th>
                       <th>Data</th>
@@ -97,7 +98,13 @@ const EmployeeProfile2 = () => {
                     </tr>
 
                     <tr>
+                      <td>Email</td>
+                      <td>email</td>
+                    </tr>
 
+                    <tr>
+                      <td>State</td>
+                      <td>{user.address.state}</td>
                     </tr>
                   </table>
 
@@ -136,7 +143,7 @@ const EmployeeProfile2 = () => {
           })}
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
