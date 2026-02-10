@@ -81,22 +81,23 @@ const EmployeeProfile2 = () => {
 
                   </div> */}
 
-                  <table style={{ border: "1px solid white", padding: "4px", width: "100%", borderCollapse: "collapse" }}>
-                    {/* <table class="table-auto"> */}
-                    <tr>
+                  {/* <table style={{ border: "1px solid white", padding: "4px", width: "100%", borderCollapse: "collapse" }}> */}
+                  {/* <table className="table-auto"> */}
+                  <table className="w-full border border-white/40 ">
+                    <tr className="w-full border border-white/40">
                       <th>Title</th>
                       <th>Data</th>
                     </tr>
-                    <tr>
+                    <tr className="w-full border border-white/40">
                       <td>Gender</td>
                       <td>{user.gender}</td>
                     </tr>
 
-                    <tr>
-                      <td>DOB:</td>
+                    <tr className="w-full border border-white/40">
+                      <td>DOB</td>
                       <td className="text-amber-400/80">{user.birthDate}</td>
                     </tr>
-                    <tr>
+                    <tr className="w-full border border-white/40">
                       <td>Weight</td>
                       <td>{user.weight}</td>
                     </tr>
@@ -105,16 +106,17 @@ const EmployeeProfile2 = () => {
                       <td>email</td>
                     </tr> */}
 
-                    <tr>
-                      <td>Blood Group:</td>
+                    <tr className="w-full border border-white/40">
+                      <td>Blood Group</td>
                       <td>{user.bloodGroup}</td>
                     </tr>
-                    <tr>
+
+                    <tr className="w-full border border-white/40">
                       <td>State</td>
                       <td>{user.address.state}</td>
                     </tr>
 
-                    <tr>
+                    <tr className="w-full border border-white/40">
                       <td>University</td>
                       <td>{user.university}</td>
                     </tr>
