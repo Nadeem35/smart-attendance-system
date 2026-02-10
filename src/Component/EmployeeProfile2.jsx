@@ -65,7 +65,7 @@ const EmployeeProfile2 = () => {
                   <p><strong>API ID:</strong> {user.id}</p>
                   <p><strong>Title:</strong> {user.firstName} {user.lastName}</p>
 
-                  <div className="my-2 flex justify-between ">
+                  {/* <div className="my-2 flex justify-between ">
 
                     <div className="w-1/2 text-center border-r border-gray-400">
                       <p><strong>Title</strong> </p>
@@ -79,51 +79,46 @@ const EmployeeProfile2 = () => {
                       <p>{user.age}</p>
                     </div>
 
-                  </div>
+                  </div> */}
 
-                  {/* <table border={1}> */}
-                  <table style={{ border: "1px solid black", borderCollapse: "collapse" }}>
+                  <table style={{ border: "1px solid white", padding: "4px", width: "100%", borderCollapse: "collapse" }}>
+                    {/* <table class="table-auto"> */}
                     <tr>
                       <th>Title</th>
                       <th>Data</th>
                     </tr>
                     <tr>
-                      <td>  <p><strong>Gender</strong></p></td>
-                      <td>  <p> {user.gender}</p></td>
+                      <td>Gender</td>
+                      <td>{user.gender}</td>
                     </tr>
 
+                    <tr>
+                      <td>DOB:</td>
+                      <td className="text-amber-400/80">{user.birthDate}</td>
+                    </tr>
                     <tr>
                       <td>Weight</td>
                       <td>{user.weight}</td>
                     </tr>
-
-                    <tr>
+                    {/* <tr>
                       <td>Email</td>
                       <td>email</td>
-                    </tr>
+                    </tr> */}
 
+                    <tr>
+                      <td>Blood Group:</td>
+                      <td>{user.bloodGroup}</td>
+                    </tr>
                     <tr>
                       <td>State</td>
                       <td>{user.address.state}</td>
                     </tr>
+
+                    <tr>
+                      <td>University</td>
+                      <td>{user.university}</td>
+                    </tr>
                   </table>
-
-
-                  <p><strong>Blood Group:</strong> {user.bloodGroup} </p>
-                  <p><strong>Weight:</strong> {user.weight} </p>
-
-                  <p>
-                    <strong>DOB:</strong>{" "}
-                    <span className="text-green-500/70">{user.birthDate}</span>{" "}
-                  </p>
-                  <p><strong>Email: </strong></p>
-                  <span className="text-gray-400">{user.email}</span>
-                  <p>
-                    <strong>University: </strong>
-                    <span className="text-gray-300">
-                      {user.university}
-                    </span>
-                  </p>
 
                   <div className="bg-gray-300/30 px-3 py-2 rounded">
                     <p className="text-center font-bold">Hairs Style</p>
