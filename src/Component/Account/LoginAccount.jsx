@@ -58,11 +58,15 @@ const AdminLogin = () => {
               </span>
             </p>
             <p className="mx-auto">
+              <Link to="/Index">Dashboard</Link>
+            </p>
+
+            {/* <p className="mx-auto">
               <Link to="/employee-profile1">Employee1</Link>
             </p>
             <p className="mx-auto">
               <Link to="/employee-profile2">Employee2</Link>
-            </p>
+            </p> */}
 
           </div>
         </div>

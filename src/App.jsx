@@ -7,6 +7,10 @@ import LoginAccount from "./Component/Account/LoginAccount";
 import ResetPasswordPage from "./Component/Account/ResetPasswordPage";
 import EmployeeProfile1 from "./Component/EmployeeProfile1";
 import EmployeeProfile2 from "./Component/EmployeeProfile2";
+import Index from "./Component/Dashboard/Index";
+import Class from "./Component/Dashboard/Class";
+import Teacher from "./Component/Dashboard/Teacher";
+import Subject from "./Component/Dashboard/Subject";
 
 const App = () => {
   return (
@@ -18,12 +22,14 @@ const App = () => {
         <Route path="/login-account" element={<LoginAccount />} /> {/*---- Home page ----*/}
         <Route path="/reset-password-page" element={<ResetPasswordPage />} /> {/*---- Home page ----*/}
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/employee-profile1" element={<EmployeeProfile1 />} />
-        <Route path="/employee-profile2" element={<EmployeeProfile2 />} />
+        {/* <Route path="/employee-profile1" element={<EmployeeProfile1 />} /> */}
+        {/* <Route path="/employee-profile2" element={<EmployeeProfile2 />} /> */}
 
-        {/* <Route path="/Home" element={<Home />} /> */}
-        {/* <Route path="/teacher-login" element={<TeacherLogin />} /> */}
-        {/* <Route path="/student-login" element={<StudentLogin />} /> */}
+        {/* DashBoard Pages */}
+        <Route path="/Index" element={<Index />} />
+        <Route path="/Class" element={<Class />} />
+        <Route path="/Subject" element={<Subject />} />
+        <Route path="/Teacher" element={<Teacher />} />
       </Routes>
       {/* </BrowserRouter> */}
     </>
