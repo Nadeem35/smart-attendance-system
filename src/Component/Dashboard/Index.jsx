@@ -78,7 +78,7 @@ const Index = () => {
           <img className="w-10" src={amsLogo} alt="" />
 
           <div className="flex items-center space-x-4">
-            <h3>Aarfeen (Admin)</h3>
+            <h3>Nadeem (Admin)</h3>
             <button className="bg-cyan-500 text-white px-4 py-1 rounded-md">
               Profile
             </button>
@@ -88,10 +88,10 @@ const Index = () => {
 
         {/* Main Content */}
         <main className="flex-1 bg-blue-400/20 p-6 overflow-y-auto">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
 
             {/* Card-1 */}
-            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition bg-linear-to-r from-indigo-400 to-indigo-200">
+            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition-all duration-300 bg-linear-to-r from-indigo-400 to-indigo-200">
               <div className="w-1/2 ">
                 <h3 className='font-semibold'> <span className='font-mono text-4xl'>11</span></h3>
                 <p className='uppercase mt-3'>Classes</p>
@@ -104,7 +104,7 @@ const Index = () => {
             </div>
 
             {/* Card-2 */}
-            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition bg-linear-to-r from-emerald-400 to-emerald-200">
+            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition-all duration-300 bg-linear-to-r from-emerald-400 to-emerald-200">
               <div className="w-1/2 ">
                 <h3 className='font-semibold'> <span className='font-mono text-4xl'>43</span></h3>
                 <p className='uppercase mt-3'>Teachers</p>
@@ -117,7 +117,7 @@ const Index = () => {
             </div>
 
             {/* Card-3 */}
-            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition bg-linear-to-r from-orange-400 to-orange-200">
+            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition-all duration-300 bg-linear-to-r from-orange-400 to-orange-200">
               <div className="w-1/2 ">
                 <h3 className='font-semibold'> <span className='font-mono text-4xl'>31</span></h3>
                 <p className='uppercase mt-3'>Subjects</p>
