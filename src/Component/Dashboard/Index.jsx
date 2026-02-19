@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import amsLogo from "../../assets/amsLogo.svg";
 import { Link } from "react-router-dom";
+import MainPage from "./MainPage";
 
 
 const Index = () => {
@@ -75,7 +76,7 @@ const Index = () => {
 
         {/* Top Navbar */}
         <nav className="h-16 bg-white shadow flex items-center justify-between px-6">
-          <img className="w-10" src={amsLogo} alt="" />
+          <img className="w-10" src={amsLogo} alt="logo image" />
 
           <div className="flex items-center space-x-4">
             <h3>Nadeem (Admin)</h3>
@@ -85,58 +86,11 @@ const Index = () => {
           </div>
         </nav>
 
-
-        {/* Main Content */}
-        <main className="flex-1 bg-blue-400/20 p-6 overflow-y-auto">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-
-            {/* Card-1 */}
-            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition-all duration-300 bg-linear-to-r from-indigo-400 to-indigo-200">
-              <div className="w-1/2 ">
-                <h3 className='font-semibold'> <span className='font-mono text-4xl'>11</span></h3>
-                <p className='uppercase mt-3'>Classes</p>
-              </div>
-              <div className='w-18 h-18 flex justify-center items-center bg-amber-50 rounded-full'>
-                <span className="text-indigo-400 material-symbols-outlined" style={{ fontSize: "40px" }}>
-                  library_books
-                </span>
-              </div>
-            </div>
-
-            {/* Card-2 */}
-            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition-all duration-300 bg-linear-to-r from-emerald-400 to-emerald-200">
-              <div className="w-1/2 ">
-                <h3 className='font-semibold'> <span className='font-mono text-4xl'>43</span></h3>
-                <p className='uppercase mt-3'>Teachers</p>
-              </div>
-              <div className='w-18 h-18 flex justify-center items-center bg-amber-50 rounded-full'>
-                <span className="text-emerald-400 material-symbols-outlined" style={{ fontSize: "40px" }}>
-                  person_add
-                </span>
-              </div>
-            </div>
-
-            {/* Card-3 */}
-            <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition-all duration-300 bg-linear-to-r from-orange-400 to-orange-200">
-              <div className="w-1/2 ">
-                <h3 className='font-semibold'> <span className='font-mono text-4xl'>31</span></h3>
-                <p className='uppercase mt-3'>Subjects</p>
-              </div>
-              <div className='w-18 h-18 flex justify-center items-center bg-amber-50 rounded-full'>
-                <span className="text-orange-400 material-symbols-outlined" style={{ fontSize: "40px" }}>
-                  dictionary
-                </span>
-              </div>
-            </div>
-
-
-
-
-
-          </div>
-        </main>
+        <MainPage />
+        <h1 className='text-center bg-black text-3xl text-green-400 p-3'>This is MainPage</h1>
 
       </div>
+
     </div >
   );
 };
