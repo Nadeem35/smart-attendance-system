@@ -26,10 +26,10 @@ const App = () => {
         {/* <Route path="/employee-profile2" element={<EmployeeProfile2 />} /> */}
 
         {/* DashBoard Pages */}
-        <Route path="/Index" element={<Index />} />
-        <Route path="/Class" element={<Class />} />
-        <Route path="/Subject" element={<Subject />} />
-        <Route path="/Teacher" element={<Teacher />} />
+        <Route index element={<Index />} />
+        <Route path="class" element={<Class />} />
+        <Route path="subject" element={<Subject />} />
+        <Route path="teacher" element={<Teacher />} />
       </Routes>
       {/* </BrowserRouter> */}
     </>

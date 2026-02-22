@@ -50,6 +50,7 @@ const MainPage = () => {
         </div>
 
 
+        <h1 className='text-center mt-15 bg-black text-3xl text-green-400 p-3'>This is Main Dashboard</h1>
 
 
       </main>
