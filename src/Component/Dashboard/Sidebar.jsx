@@ -31,7 +31,7 @@ const Sidebar = () => {
         {/* Sidebar Menu */}
         <ul className="space-y-3 mx-auto">
           <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 cursor-pointer ${collapsed ? "justify-center" : ""}`}>
-            <Link to="/dashboard" className="flex">
+            <Link to="/index" className="flex">
               <span className="material-symbols-outlined mr-2">
                 dashboard
               </span>
@@ -40,7 +40,7 @@ const Sidebar = () => {
           </li>
 
           <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 cursor-pointer ${collapsed ? "justify-center" : ""}`}>
-            <Link to="/dashboard/class" className="flex">
+            <Link to="/class" className="flex">
               <span className="material-symbols-outlined mr-2">
                 format_list_bulleted_add
               </span>
@@ -49,7 +49,7 @@ const Sidebar = () => {
           </li>
 
           <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 cursor-pointer ${collapsed ? "justify-center" : ""}`}>
-            <Link to="/dashboard/teacher" className="flex">
+            <Link to="/teacher" className="flex">
               <span className="material-symbols-outlined mr-2">
                 topic
               </span>
@@ -58,7 +58,7 @@ const Sidebar = () => {
           </li>
 
           <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 cursor-pointer ${collapsed ? "justify-center" : ""}`}>
-            <Link to="/dashboard/subject" className="flex">
+            <Link to="/subject" className="flex">
               <span className="material-symbols-outlined mr-2">
                 account_circle
               </span>
