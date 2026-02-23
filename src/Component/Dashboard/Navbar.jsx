@@ -1,4 +1,4 @@
-import React from 'react'
+
 import amsLogo from "../../assets/amsLogo.svg";
 
 const Navbar = () => {

@@ -58,7 +58,7 @@ const AdminLogin = () => {
               </span>
             </p>
             <p className="mx-auto">
-              <Link to="/Index">Dashboard</Link>
+              <Link to="/layout">Dashboard</Link>
             </p>
 
             {/* <p className="mx-auto">

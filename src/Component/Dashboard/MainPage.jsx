@@ -1,11 +1,10 @@
-import React from 'react'
 
 const MainPage = () => {
   return (
     <>
 
       {/* Main Content */}
-      <main className="flex-1 bg-blue-400/20 p-6 overflow-y-auto">
+      <main className="flex-1 p-2 overflow-y-auto">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
 
           {/* Card-1 */}
@@ -50,10 +49,8 @@ const MainPage = () => {
         </div>
 
 
-        <h1 className='text-center mt-15 bg-black text-3xl text-green-400 p-3'>This is Main Dashboard</h1>
-
-
-      </main>
+        <h1 className='text-center mt-15 bg-black text-3xl text-red-400 p-3'>This is Main Dashboard</h1>
+      </main >
     </>
   )
 }

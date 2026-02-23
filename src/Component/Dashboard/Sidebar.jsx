@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -13,60 +13,67 @@ const Sidebar = () => {
           } bg-white p-4 transition-all duration-300`}
       >
         {/* Sidebar Header */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center text-center justify-between mb-6">
           {!collapsed && (
             <h2 className="text-lg font-bold">Dashboard</h2>
           )}
 
           <button
             onClick={() => setCollapsed(!collapsed)}
-            className="text-3xl hover:cursor-pointer"
+            className="text-3xl text-center cursor-pointer"
           >
-            <span className="ml-3 material-symbols-outlined">
+            <span className="material-symbols-outlined">
               menu
             </span>
           </button>
         </div>
 
         {/* Sidebar Menu */}
-        <ul className="space-y-3 mx-auto">
-          <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 cursor-pointer ${collapsed ? "justify-center" : ""}`}>
-            <Link to="/index" className="flex">
-              <span className="material-symbols-outlined mr-2">
+        <ul className="space-y-3">
+
+          {/* Dashboard */}
+          <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 ${collapsed ? "justify-center" : ""}`}>
+            <NavLink to="" end className="flex items-center w-full">
+              <span className="material-symbols-outlined">
                 dashboard
               </span>
               {!collapsed && "Dashboard"}
-            </Link>
+            </NavLink>
           </li>
 
-          <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 cursor-pointer ${collapsed ? "justify-center" : ""}`}>
-            <Link to="/class" className="flex">
-              <span className="material-symbols-outlined mr-2">
+          {/* Class */}
+          <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 ${collapsed ? "justify-center" : ""}`}>
+            <NavLink to="class" className="flex items-center w-full">
+              <span className="material-symbols-outlined">
                 format_list_bulleted_add
               </span>
               {!collapsed && "Class List"}
-            </Link>
+            </NavLink>
           </li>
 
-          <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 cursor-pointer ${collapsed ? "justify-center" : ""}`}>
-            <Link to="/teacher" className="flex">
-              <span className="material-symbols-outlined mr-2">
-                topic
-              </span>
-              {!collapsed && "Subject List"}
-            </Link>
-          </li>
-
-          <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 cursor-pointer ${collapsed ? "justify-center" : ""}`}>
-            <Link to="/subject" className="flex">
-              <span className="material-symbols-outlined mr-2">
-                account_circle
+          {/* Teacher */}
+          <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 ${collapsed ? "justify-center" : ""}`}>
+            <NavLink to="teacher" className="flex items-center w-full">
+              <span className="material-symbols-outlined">
+                person
               </span>
               {!collapsed && "Teacher List"}
-            </Link>
+            </NavLink>
           </li>
+
+          {/* Subject */}
+          <li className={`flex items-center p-2 rounded hover:bg-blue-400/20 ${collapsed ? "justify-center" : ""}`}>
+            <NavLink to="subject" className="flex items-center w-full">
+              <span className="material-symbols-outlined">
+                book
+              </span>
+              {!collapsed && "Subject List"}
+            </NavLink>
+          </li>
+
         </ul>
       </aside>
+
     </>
   )
 }
