@@ -40,7 +40,7 @@ const Sidebar = () => {
               `flex items-center w-full p-2 rounded 
               hover:bg-blue-400/20 transition-all duration-200
               ${collapsed ? "justify-center" : ""}
-              ${isActive ? "bg-blue-500/20 text-blue-600 " : ""}`
+              ${isActive ? "bg-blue-400/20 text-blue-600" : ""}`
             }
           >
             <span className="material-symbols-outlined">
@@ -58,7 +58,7 @@ const Sidebar = () => {
               `flex items-center w-full p-2 rounded 
               hover:bg-blue-400/20 transition-all duration-200
               ${collapsed ? "justify-center" : ""}
-              ${isActive ? "bg-blue-500/20 text-blue-600 " : ""}`
+              ${isActive ? "bg-blue-400/20 text-blue-600 " : ""}`
             }
           >
             <span className="material-symbols-outlined">
@@ -76,7 +76,7 @@ const Sidebar = () => {
               `flex items-center w-full p-2 rounded 
               hover:bg-blue-400/20 transition-all duration-200
               ${collapsed ? "justify-center" : ""}
-              ${isActive ? "bg-blue-500/20 text-blue-600 " : ""}`
+              ${isActive ? "bg-blue-400/20 text-blue-600 " : ""}`
             }
           >
             <span className="material-symbols-outlined">
@@ -94,7 +94,7 @@ const Sidebar = () => {
               `flex items-center w-full p-2 rounded 
               hover:bg-blue-400/20 transition-all duration-200
               ${collapsed ? "justify-center" : ""}
-              ${isActive ? "bg-blue-500/20 text-blue-600 " : ""}`
+              ${isActive ? "bg-blue-400/20 text-blue-600 " : ""}`
             }
           >
             <span className="material-symbols-outlined">

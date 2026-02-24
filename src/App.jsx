@@ -21,7 +21,7 @@ const App = () => {
       <Route path="/forgot-password" element={<ForgotPassword />} />
 
       {/* Dashboard with Nested Routes */}
-      <Route path="/" element={<Layout />}>
+      <Route path="layout" element={<Layout />}>
         <Route index element={<MainPage />} />
         <Route path="class" element={<Class />} />
         <Route path="teacher" element={<Teacher />} />

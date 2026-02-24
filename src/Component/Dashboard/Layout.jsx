@@ -3,7 +3,6 @@ import Sidebar from "./Sidebar";
 import Navbar from "./Navbar"
 
 const Layout = () => {
-  // const [collapsed, setCollapsed] = useState(false);
 
   return (
     <div className="flex h-screen">
