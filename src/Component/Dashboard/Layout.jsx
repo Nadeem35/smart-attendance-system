@@ -12,7 +12,7 @@ const Layout = () => {
       <Sidebar />
 
       {/* Right Section */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col h-screen">
 
         {/* Navbar */}
         <Navbar />

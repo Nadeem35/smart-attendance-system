@@ -5,7 +5,7 @@ const MainPage = () => {
 
       {/* Main Content */}
       <main className="flex-1 p-2 overflow-y-auto">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-14 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
 
           {/* Card-1 */}
           <div className="bg-white flex h-32 py-5 px-10 rounded-3xl justify-between items-center shadow hover:scale-105 transition-all duration-300 bg-linear-to-r from-indigo-400 to-indigo-200">
@@ -49,7 +49,7 @@ const MainPage = () => {
         </div>
 
 
-        <h1 className='text-center mt-15 bg-black text-3xl text-red-400 p-3'>This is Main Dashboard</h1>
+        <h1 className='w-1/2 mx-auto text-center mt-15 bg-black text-3xl text-red-400 p-3'>This is Main Dashboard</h1>
       </main >
     </>
   )
