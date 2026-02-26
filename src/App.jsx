@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import SignUp from "./component/Account/SignUp";
-import ForgotPassword from "./component/Account/ForgotPassword";
-import LoginAccount from "./component/Account/LoginAccount";
-import ResetPasswordPage from "./component/Account/ResetPasswordPage";
+import SignUp from "./components/Account/SignUp";
+import ForgotPassword from "./components/Account/ForgotPassword";
+import LoginAccount from "./components/Account/LoginAccount";
+import ResetPasswordPage from "./components/Account/ResetPasswordPage";
 
-import Layout from "./component/Dashboard/Layout";
-import MainPage from "./component/Dashboard/MainPage";
-import Class from "./component/Dashboard/Class";
-import Teacher from "./component/Dashboard/Teacher";
-import Subject from "./component/Dashboard/Subject";
+import Layout from "./components/Dashboard/Layout";
+import MainPage from "./components/Dashboard/MainPage";
+import Class from "./components/Dashboard/Class";
+import Teacher from "./components/Dashboard/Teacher";
+import Subject from "./components/Dashboard/Subject";
 
 const App = () => {
   return (
