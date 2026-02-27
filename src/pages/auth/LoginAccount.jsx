@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import attendanceBg from "../../assets/attendanceBg.jpg"
-import LogoTitle from "../LogoTitle";
+import LogoTitle from "../../components/LogoTitle";
 
 const AdminLogin = () => {
   return (

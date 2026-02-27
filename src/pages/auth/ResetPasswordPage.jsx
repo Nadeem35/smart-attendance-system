@@ -1,6 +1,6 @@
 import attendanceBg from "../../assets/attendanceBg.jpg"
 import { Link } from "react-router-dom";
-import LogoTitle from "../LogoTitle";
+import LogoTitle from "../../components/LogoTitle";
 
 const ResetPasswordPage = () => {
   return (

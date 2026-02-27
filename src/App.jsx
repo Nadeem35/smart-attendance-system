@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import SignUp from "./components/Account/SignUp";
-import ForgotPassword from "./components/Account/ForgotPassword";
-import LoginAccount from "./components/Account/LoginAccount";
-import ResetPasswordPage from "./components/Account/ResetPasswordPage";
+import SignUp from "./pages/auth/SignUp";
+import ForgotPassword from "./pages/auth/ForgotPassword";
+import LoginAccount from "./pages/auth/LoginAccount";
+import ResetPasswordPage from "./pages/auth/ResetPasswordPage";
 
 import Layout from "./components/Dashboard/Layout";
 import MainPage from "./components/Dashboard/MainPage";

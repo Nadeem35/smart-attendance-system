@@ -1,5 +1,4 @@
-
-import amsLogo from "../../assets/amsLogo.svg";
+import amsLogo from "../assets/amsLogo.svg";
 
 const Navbar = () => {
   return (
