@@ -4,11 +4,11 @@ import ForgotPassword from "./pages/auth/ForgotPassword";
 import LoginAccount from "./pages/auth/LoginAccount";
 import ResetPasswordPage from "./pages/auth/ResetPasswordPage";
 
-import Layout from "./components/Dashboard/Layout";
-import MainPage from "./components/Dashboard/MainPage";
-import Class from "./components/Dashboard/Class";
-import Teacher from "./components/Dashboard/Teacher";
-import Subject from "./components/Dashboard/Subject";
+import Layout from "./pages/dashboard/Layout";
+import MainPage from "./pages/dashboard/MainPage";
+import Class from "./pages/dashboard/Class";
+import Teacher from "./pages/dashboard/Teacher";
+import Subject from "./pages/dashboard/Subject";
 
 const App = () => {
   return (

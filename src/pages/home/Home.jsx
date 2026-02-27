@@ -1,5 +1,5 @@
 import React from "react";
-import LogoTitle from "../LogoTitle";
+import LogoTitle from "../../components/LogoTitle";
 import { Link } from "react-router-dom";
 
 const Home = () => {
